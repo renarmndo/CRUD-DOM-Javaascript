@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-100">
+    <div
+      class="head w-full flex justify-evenly bg-teal-500 px-2 py-4 items-center"
+    >
+      <div class="logo">
+        <h1 class="text-xl text-white font-bold">UNPAM</h1>
+      </div>
+      <ul class="flex gap-8">
+        <li>
+          <a
+            href=""
+            class="text-white text-md font-bold hover:underline hover:text-"
+            >Home</a
+          >
+        </li>
+        <li>
+          <a
+            href=""
+            class="text-white text-md font-bold hover:underline transition duration-300"
+            >Profile</a
+          >
+        </li>
+        <li>
+          <a
+            href=""
+            class="text-white font-bold hover:underline transition duration-300"
+            >Contak Us</a
+          >
+        </li>
+        <li>
+          <a
+            href=""
+            class="text-white font-bold hover:underline transition duration-300"
+            >About Me</a
+          >
+        </li>
+      </ul>
+    </div>
+    <div class="menu w-full">
+      <div class="data container mx-auto">
+        <h1 class="text-2xl font-bold mt-10">Data Tabel Mahasiswa</h1>
+        <table
+          id="crudTable"
+          class="min-w-full bg-white border border-gray-200 rounded-lg mt-5"
+        >
+          <thead>
+            <tr>
+              <th
+                id="id"
+                class="px-6 py-3 border border-gray-200 bg-gray-50 text-center text-xs font-medium text-gray-500 uppercase"
+              >
+                ID
+              </th>
+              <th
+                class="px-6 py-3 border border-gray-200 bg-gray-50 text-center text-xs font-medium text-gray-500 uppercase"
+              >
+                Nama
+              </th>
+              <th
+                class="px-6 py-3 border border-gray-200 bg-gray-50 text-center text-xs font-medium text-gray-500 uppercase"
+              >
+                Email
+              </th>
+              <th
+                class="px-6 py-3 border border-gray-200 bg-gray-50 text-center text-xs font-medium text-gray-500 uppercase"
+              >
+                NIM
+              </th>
+              <th
+                class="px-6 py-3 border border-gray-200 bg-gray-50 text-center text-xs font-medium text-gray-500 uppercase"
+              >
+                Action
+              </th>
+            </tr>
+          </thead>
+          <tbody id="tablebody"></tbody>
+        </table>
+        <div
+          class="data w-full mx-auto mt-32 border border-black py-5 px-5 rounded-lg"
+        >
+          <form action="" id="crudForm">
+            <label for="" class="font-bold text-gray-500">Nama</label>
+            <input
+              type="text"
+              id="nama"
+              placeholder="Masukkan Nama "
+              required
+              class="border border-gray-500 w-full mb-3 py-2 px-3 rounded-lg"
+            />
+            <label for="" class="text-gray-500 font-bold">Email</label>
+            <input
+              type="email"
+              id="email"
+              placeholder="Masukkan Email "
+              required
+              class="border border-gray-500 w-full mb-3 py-2 px-3 rounded-lg"
+            />
+            <label for="" class="font-bold text-gray-500">NIM</label>
+            <input
+              type="number"
+              id="nim"
+              placeholder="Masukkan Nim "
+              required
+              class="border border-gray-500 w-full mb-3 py-2 px-3 rounded-lg"
+            />
+            <input
+              type="submit"
+              value="Tambah"
+              class="bg-teal-500 px-4 py-3 rounded-lg text-white font-bold"
+            />
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="crud.js"></script>
+  </body>
+</html>
